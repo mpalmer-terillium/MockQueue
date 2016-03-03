@@ -3,7 +3,7 @@ package com.mockqueue.queue;
 import com.mockqueue.dto.Message;
 import java.util.LinkedList;
 
-
+ 
 public class MockQueue {
     
     private final Message DEFAULT_MESSAGE = new Message("No more messages", -1);
