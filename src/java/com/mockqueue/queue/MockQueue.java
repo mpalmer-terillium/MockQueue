@@ -1,12 +1,13 @@
 package com.mockqueue.queue;
 
 import com.mockqueue.dto.Message;
+import com.mockqueue.dto.Message.MessageType;
 import java.util.LinkedList;
 
  
 public class MockQueue {
     
-    private final Message DEFAULT_MESSAGE = new Message("No more messages", -1);
+    private final Message DEFAULT_MESSAGE = new Message("No more messages", -1, MessageType.Other);
     
     private final LinkedList<Message> queue = new LinkedList<>();
     
